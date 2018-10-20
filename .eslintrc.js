@@ -23,6 +23,7 @@ module.exports = {
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
+    'key-spacing':'off',
     'eqeqeq':'off',
     
     // allow debugger during development
