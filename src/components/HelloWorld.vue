@@ -2,6 +2,8 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h1>{{from}}</h1>
+    <h1>{{job}}</h1>
+    <h1>{{time}}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -90,7 +92,9 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      from: 'hangzhou'
+      from: 'hangzhou',
+      job:'前端',
+      time:'10-24'
     }
   }
 }
