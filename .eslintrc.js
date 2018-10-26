@@ -25,7 +25,8 @@ module.exports = {
     'generator-star-spacing': 'off',
     'key-spacing':'off',
     'eqeqeq':'off',
-    
+    'no-undef':1,
+    'no-unused-vars':1,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
