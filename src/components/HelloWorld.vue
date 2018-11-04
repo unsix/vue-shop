@@ -85,6 +85,29 @@
     </ul>
   </div>
 </template>
+<template>
+  <div>
+    <div class="field is-grouped is-grouped-multiline">
+      <p class="control">
+        <button type="button" class="button" @click="add" :disabled="images.length===10">Add</button>
+      </p>
+      <p class="control">
+        <button type="button" class="button" @click="remove" :disabled="images.length===0">Remove</button>
+      </p>
+      <p class="control">
+        <button type="button" class="button" @click="show">Show</button>
+      </p>
+    </div>
+    <p>
+      To show the viewer, you can click these images too.
+    </p>
+    <div v-viewer="options" class="images clearfix">
+      <template v-for="{source, thumbnail} in images">
+        <img :src="thumbnail" :data-source="source" class="image" :key="source" :alt="source.split('?image=').pop()">
+      </template>
+    </div>
+  </div>
+</template>
 <script>
 
 export default {
